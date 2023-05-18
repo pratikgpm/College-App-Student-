@@ -4,9 +4,7 @@ public class ebookData {
 
     String name , pdfUrl;
 
-    public ebookData() {
 
-    }
 
     public ebookData(String name, String pdfUrl) {
         this.name = name;
@@ -29,6 +27,10 @@ public class ebookData {
 
     public void setPdfUrl(String pdfUrl) {
         this.pdfUrl = pdfUrl;
+    }
+
+    public ebookData() {
+
     }
 }
 

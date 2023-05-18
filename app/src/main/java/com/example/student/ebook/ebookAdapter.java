@@ -40,7 +40,7 @@ public class ebookAdapter extends RecyclerView.Adapter<ebookAdapter.EbookViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull EbookViewHolder holder,  final int position) {
+    public void onBindViewHolder(@NonNull EbookViewHolder holder,   final int position) {
         ebookData item = list.get(position);
 
         holder.ebookName.setText(item.getName());
@@ -48,7 +48,9 @@ public class ebookAdapter extends RecyclerView.Adapter<ebookAdapter.EbookViewHol
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,"Not Download Yet..", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(context,pdfViewerActivity.class);
+               intent.putExtra("pdfUrl",list.get(position).getPdfUrl());
+               context.startActivity(intent);
             }
         });
 
