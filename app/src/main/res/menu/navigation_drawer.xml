@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_video"
+        android:title="Video Lecture"
+        android:icon="@drawable/monitor"
+        />
+
+    <item android:id="@+id/navigation_ebook"
+        android:title="Ebook"
+        android:icon="@drawable/ebooks"
+        />
+    <item android:id="@+id/navigation_theme"
+        android:title="Themes"
+        android:icon="@drawable/themes"
+        />
+    <item android:id="@+id/navigation_website"
+        android:title="Website"
+        android:icon="@drawable/internet"
+        />
+    <item android:id="@+id/navigation_share"
+        android:title="Share"
+        android:icon="@drawable/share"
+        />
+    <item android:id="@+id/navigation_rete"
+        android:title="Rate us"
+        android:icon="@drawable/review"
+        />
+
+    <item android:id="@+id/navigation_developer"
+        android:title="Developer"
+        android:icon="@drawable/coding"
+        />
+
+</menu>
