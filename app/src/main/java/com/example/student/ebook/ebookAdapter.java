@@ -40,7 +40,8 @@ public class ebookAdapter extends RecyclerView.Adapter<ebookAdapter.EbookViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull EbookViewHolder holder,   final int position) {
+    public void onBindViewHolder(@NonNull EbookViewHolder holder,  final int position) {
+
         ebookData item = list.get(position);
 
         holder.ebookName.setText(item.getName());
